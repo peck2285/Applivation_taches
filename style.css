@@ -1,0 +1,187 @@
+
+body {
+   margin: 0;
+    font-family: Arial, Helvetica, sans-serif;background-color: teal;
+}
+
+ button, .btn{
+
+    border: none;
+    padding: 5px;
+    outline: none;
+    color: #fff;
+    background-color: teal;
+    text-transform: uppercase;
+    box-shadow: 2px 2px 5px rgb(104, 104, 104);
+    cursor: pointer;
+
+}
+
+.container{
+
+
+    width: 90%;
+    outline: none;
+    max-width: 900px;
+    border: 1px solid black;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 10px;
+   
+
+}
+
+
+.container form{
+
+    display:flex;
+    gap: 10px;
+}
+
+.container form >input {
+    
+
+    flex: 1;
+    height: 30px;
+    font-size: 1.2rem;
+     outline: none;
+    border: 1px solid #ccc;
+
+}
+
+
+
+ul{
+
+    list-style: none;
+    padding: 0;
+}
+
+
+
+.txt_add{
+  text-align: center;
+}
+
+.container li{
+
+    margin: 10px 0;
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    min-height: 30px;
+   
+}
+
+
+.container li input,
+.container li span{
+    flex: 1;
+}
+
+.btn{
+    min-width: 70px;
+}
+
+
+
+.btn-danger{
+    background-color: rgb(255, 72, 72);
+}
+.btn-primary{
+    background-color: teal;
+}
+.btn-success{
+    background-color: rgb(60, 60, 254);
+}
+.btn-warning{
+    background-color: rgb(251, 134, 0);
+}
+
+
+
+
+
+
+#search-container {
+  margin: 1em 0;
+}
+#search-container input {
+  background-color: transparent;
+  width: 40%;
+  border-bottom: 2px solid #110f29;
+  padding: 1em 0.3em;
+}
+#search-container input:focus {
+  border-bottom-color: #6759ff;
+}
+#search-container button {
+  padding: 1em 2em;
+  margin-left: 1em;
+  background-color: #6759ff;
+  color: #ffffff;
+  border-radius: 5px;
+  margin-top: 0.5em;
+}
+.button-value {
+  border: 2px solid #6759ff;
+  padding: 1em 2.2em;
+  border-radius: 3em;
+  background-color: transparent;
+  color: #6759ff;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #6759ff;
+  color: #ffffff;
+}
+
+.hide {
+  display: none;
+}
+
+#products {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.productDiv {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 200px;
+  margin: 20px 0px;
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+
+.product p {
+  margin: 5px 0;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 720px) {
+  img {
+    max-width: 100%;
+    object-fit: contain;
+    height: 10em;
+  }
+  .card {
+    max-width: 10em;
+    margin-top: 1em;
+  }
+  #products {
+    grid-template-columns: auto auto;
+    grid-column-gap: 1em;
+  }
+}
